@@ -3,11 +3,11 @@ from mlProject.components.data_ingestion import DataIngestion
 from mlProject import logger
 
 
-STAGE_NAME = 'Data Ingestion stage'
+STAGE_NAME = "Data Ingestion stage"
 
 
 class DataIngestionTrainingPipeline:
-    def __init__(self) -> None:
+    def __init__(self):
         pass
 
     def main(self):
@@ -26,4 +26,4 @@ if __name__ == '__main__':
         logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
     except Exception as e:
         logger.exception(e)
-        raise e 
+        raise e

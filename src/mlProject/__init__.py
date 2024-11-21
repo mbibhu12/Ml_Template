@@ -1,17 +1,17 @@
 import os
 import sys
 import logging
-from logging import Logger
 
-logging_str="[%(asctime)s: %(levelname)s: %(module)s: %(message)s]"
+logging_str = "[%(asctime)s: %(levelname)s: %(module)s: %(message)s]"
 
 log_dir = "logs"
 
 log_filepath = os.path.join(log_dir, "running_log.log")
-os.makedirs(log_dir,exist_ok=True)
+os.makedirs(log_dir, exist_ok=True)
+
 
 logging.basicConfig(
-    level=logging.INFO,
+    level = logging.INFO,
     format = logging_str,
 
     handlers=[
@@ -20,5 +20,4 @@ logging.basicConfig(
     ]
 )
 
-
-logger: Logger = logging.getLogger("mlProjectLogger")
+logger = logging.getLogger("mlProjectLogger")

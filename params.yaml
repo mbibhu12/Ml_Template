@@ -1,1 +1,3 @@
-key: val #params should not be empty as it gives unknown unnecessary error
+ElasticNet:
+  alpha: 0.1
+  l1_ratio: 0.1

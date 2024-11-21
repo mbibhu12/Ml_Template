@@ -1,3 +1,6 @@
+# End-to-end-ML-Project
+
+
 ## Workflows
 
 1. update config.yaml
@@ -115,4 +118,4 @@ Now open up your local host 0.0.0.0:8080
 
 
 
- git config --global user.name "mbibhu12"
+ git config --global user.name "entbappy"
