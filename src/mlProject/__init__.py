@@ -1,6 +1,7 @@
 import os
 import sys
 import logging
+from logging import Logger
 
 logging_str="[%(asctime)s: %(levelname)s: %(module)s: %(message)s]"
 
@@ -20,4 +21,4 @@ logging.basicConfig(
 )
 
 
-logger = logging.getLogger("mlProjectLogger")
+logger: Logger = logging.getLogger("mlProjectLogger")
